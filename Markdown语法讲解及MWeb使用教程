@@ -1,0 +1,189 @@
+# Markdown语法讲解及MWeb使用教程  
+**（下载了MWeb软件，里面有一个英文的指示文档，顺便翻译了一下，通过这个过程也大致熟悉了Markdown语法）**
+##理念  
+>Markdown想要将易读易写变为可能。
+>可读性是最为重要的，一份公开的Markdown式的文件应该如他原来的样子一样，简单明了，不会看起来像被标签整理过，也不会看起来像被命令格式化过。
+>Markdown语法的目的只有一个：成为大家接受的网页写作的标准格式。  
+  
+##提示
+在编辑器中，你可以用`Command+R`或者`Command+4`来预览你正在书写的文档。  
+
+##标题
+**例子：**
+
+```
+# 这是一个 `<h1>` 标签
+## 这是一个 `<h2>` 标签
+###### 这是一个 `<h6>` 标签
+```
+
+**呈现的结果：**
+# 这是一个 `<h1>` 标签
+## 这是一个 `<h2>` 标签
+###### 这是一个 `<h6>` 标签  
+
+##强调
+**例子：**  
+
+```
+*这一行格式为斜体*
+_这一行格式也为斜体_
+
+**这一行将被加粗**
+__这一行也会被加粗__
+
+_也 **可以** 联合使用这种格式_
+```  
+
+**呈现的结果：**    
+
+*这一行格式为斜体*
+_这一行格式也为斜体_
+
+**这一行将被加粗**
+__这一行也会被加粗__
+
+_也 **可以** 联合使用这种格式_
+##换行
+在一行的结尾输入`两次空格+enter`即可实现换行效果。  
+如果想要只输入enter即实现换行效果的话，可以在`Preferences` - `Themes` - `Translate newlines to <br> tags`进行设置。
+##列表
+###无序列表
+**例子：**  
+```
+* 无序队列条目1 `* + SPACE`
+* 无序队列条目2
+* Item 2a unordered list `TAB + * + SPACE`
+* Item 2b
+```
+
+**呈现的结果：**   
+
+* 无序队列条目1 `* + SPACE`
+* 无序队列条目2
+* Item 2a unordered list `TAB + * + SPACE`
+* Item 2b
+
+###有序列表
+**例子：**
+  
+```
+1. 有序队列条目1 `Number + . + SPACE`
+2. 有序队列条目2
+3. 有序队列条目3
+1. Item 3a ordered list `TAB + Number + . + SPACE`
+2. Item 3b
+```
+**呈现的结果：**   
+
+1. 有序队列条目1 `Number + . + SPACE`
+2. 有序队列条目2
+3. 有序队列条目3
+1. Item 3a ordered list `TAB + Number + . + SPACE`
+2. Item 3b
+
+###任务清单
+**例子：**
+  
+```
+- [ ] 任务未完成 `- + SPACE + [ ]`
+- [x] 任务完成 `- + SPACE + [x]`
+```
+**呈现的结果：**   
+
+- [ ] 任务未完成 `- + SPACE + [ ]`
+- [x] 任务完成 `- + SPACE + [x]`
+
+###图片
+**例子：**
+  
+```
+![GitHub set up](https://help.github.com/assets/images/site/set-up-git.gif)
+Format: ![](url)
+```
+**快捷键：**`Control + Shift + I`
+
+**呈现的结果：**   
+
+![图片](https://help.github.com/assets/images/site/set-up-git.gif)
+
+使用MWeb，你可以使用`-w + 数字`来设置图片的宽度值，例如：
+
+![图片 -w140](https://help.github.com/assets/images/site/set-up-git.gif)
+##链接
+**例子：**
+  
+```
+email <example@example.com>
+[GitHub](http://github.com)
+autolink  <http://www.github.com/>
+```
+
+**快捷键：**`Control + Shift + L`
+
+**呈现的结果：**   
+
+email <example@example.com>
+[GitHub](http://github.com)
+autolink  <http://www.github.com/>
+
+##引用
+**例子：**
+```
+毛主席说过:
+> 真理只有一个,而究竟谁发现了真理,不依靠主观的夸张,而依靠客观的实践。
+> 只有千百万人民的革命实践,才是检验真理的尺度。
+```
+
+**快捷键：**`Command + Shift + B`
+
+**呈现的结果：**   
+毛主席说过:
+> 真理只有一个,而究竟谁发现了真理,不依靠主观的夸张,而依靠客观的实践。
+> 只有千百万人民的革命实践,才是检验真理的尺度。
+
+
+##嵌入代码
+
+**例子：**
+```
+I think you should use an
+`<addr>` `code` element here instead.
+```
+
+**快捷键：**`Command + K `
+
+**呈现的结果：**   
+I think you should use an
+`<addr>` `code` element here instead.
+
+##嵌入多行代码
+
+**例子：**
+
+    ```
+    js
+    function fancyAlert(arg) {
+        if(arg) {
+            $.facebox({div:'#foo'})
+        }
+    
+    }
+    ```
+
+**快捷键：**`Command +Shift+ K `
+
+**呈现的结果：**   
+
+```
+    js
+    function fancyAlert(arg) {
+        if(arg) {
+            $.facebox({div:'#foo'})
+        }
+    
+    }
+```
+
+
+**常用的都在上面了。**
